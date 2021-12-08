@@ -14,27 +14,27 @@ app.get('/ping', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-	res.render('index')
+	res.render('./index')
 });
 
 app.get('/beli', (req, res) => {
-	res.render('beli')
+	res.render('./beli')
 });
 
 app.get('/mitra', (req, res) => {
-	res.render('mitra')
+	res.render('./mitra')
 });
 
 app.get('/masukan', (req, res) => {
-	res.render('masukan')
+	res.render('./masukan')
 });
 
 app.get('/hubungi', (req, res) => {
-	res.render('callCentre')
+	res.render('./callCentre')
 });
 
 app.get('/tentang', (req, res) => {
-	res.render('about')
+	res.render('./about')
 });
 
 app.use(notFound)
