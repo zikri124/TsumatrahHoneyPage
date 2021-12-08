@@ -2,12 +2,12 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
 
-app.set('views', './views')
+app.set('views', __dirname +'./views')
 app.set('view engine', 'pug')
 
-app.use('/img', express.static('public'));
-app.use('/css', express.static('views/css'));
-app.use('/js', express.static('views/js'));
+app.use('/img', express.static(__dirname + 'public'));
+app.use('/css', express.static(__dirname + 'views/css'));
+app.use('/js', express.static(__dirname + 'views/js'));
 
 app.get('/ping', (req, res) => {
     res.send('online')
