@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
 
-app.set('views', './views')
+app.set('views', __dirname + '../views')
 app.set('view engine', 'pug')
 
 app.use('/img', express.static(__dirname + 'public'));
@@ -14,27 +14,27 @@ app.get('/ping', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-	res.render('./views/index')
+	res.render('index')
 });
 
 app.get('/beli', (req, res) => {
-	res.render('./views/beli')
+	res.render('beli')
 });
 
 app.get('/mitra', (req, res) => {
-	res.render('./views/mitra')
+	res.render('mitra')
 });
 
 app.get('/masukan', (req, res) => {
-	res.render('./views/masukan')
+	res.render('masukan')
 });
 
 app.get('/hubungi', (req, res) => {
-	res.render('./views/callCentre')
+	res.render('callCentre')
 });
 
 app.get('/tentang', (req, res) => {
-	res.render('./views/about')
+	res.render('about')
 });
 
 app.use(notFound)
