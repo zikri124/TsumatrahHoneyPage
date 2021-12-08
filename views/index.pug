@@ -1,0 +1,73 @@
+include includes/header.pug
+
+#butter
+    section.sampul
+        #carouselExampleSlidesOnly.coarousel.slide(data-bs-ride="carousel")
+            .carousel-inner 
+                .carousel-item.active
+                    img.bgtitle.img-fluid.d-block(src='/img/bg1.jpg' alt='Foto')
+                .carousel-item
+                    img.bgtitle.img-fluid.d-block(src='/img/keunggulan3.jpg' alt='Foto')
+                .carousel-item
+                    img.bgtitle.img-fluid.d-block(src='/img/bg2.jpg' alt='Foto')
+        .img-cover
+        .container-cover
+            h1.maintitle.bold Tsumatrah
+            h1.title.bold Murni Dari Alam
+
+    .keunggulan.centerFlex
+        h1.title.underline Keunggulan madu Tsumatrah
+        .container-contents
+            .container-content
+                div
+                    img.content-foto(src='/img/keunggulan1.jpg' alt='Foto' loading="auto")
+                .content-text
+                    h1.h3 Madu asli 100% tanpa bahan campuran
+            .container-content
+                div
+                    img.content-foto(src='/img/keunggulan2.jpg' alt='Foto' loading="auto")
+                .content-text
+                    h1.h3 Praktis dan mudah untuk dibawa kemanapun
+            .container-content
+                div
+                    img.content-foto(src='/img/keunggulan3.jpg' alt='Foto' loading="auto")
+                .content-text
+                    h1.h3 Kaya akan manfaat untuk tubuh
+
+    .manfaat-madu.centerFlex
+        h1.title.underline Manfaat madu Tsumatrah
+        .container-content
+            .content-text
+                h1.h4 Meningkatkan imunitas tubuh
+                p
+                    | Senyawa fitonutrien yang terkandung dalam madu Tsumatrah dapat memperkuat sel-sel imun dalam tubuh. Hal ini tentunya akan memperkecil kemungkinan terjadinya penyakit infeksi. Ditambah lagi, madu juga diketahui memiliki khasiat sebagai antibakteri dan antijamur.
+        .container-content
+            .content-text
+                h1.h4 Menangkal radikal bebas
+                p
+                    | Senyawa fitonutrien dan sejumlah vitamin pada madu Tsumatrah merupakan antioksidan alami yang dapat menangkal radikal bebas berlebih dalam tubuh. Khasiat madu ini sangat berguna untuk mencegah kerusakan sel dan jaringan tubuh yang disebabkan oleh aktivitas oksidasi.
+        .container-content
+            .content-text
+                h1.h4 Sumber energi yang seimbang untuk tubuh
+                p
+                    | Satu sendok makan madu Tsumatrah mengandung 64 kalori dan 17 gram gula termasuk fruktosa, glukosa, maltosa, dan sukrosa. Kandungan tersebut membuat madu menjadi sumber energi yang baik.
+        .container-content
+            .content-text
+                h1.h4 Mencegah dan mengobati diabetes
+                p
+                    | Rasa manis pada madu Tsumatrah berbeda dengan gula dan pemanis buatan. Justru kombinasi dari fruktosa dan glukosa dapat membantu tubuh mengatur kadar gula darah.
+        .container-content
+            .content-text
+                h1.h4 Kaya akan anti-oksidan
+                p
+                    | Anti-oksidan pada madu Tsumatrah memiliki banyak manfaat untuk wajah dan kecantikan, diantaranya pelembab alami,membasmi jerawat dan bekas jerawat, menghaluskan wajah, menyamarkan flek hitam, dan masih banyak lagi
+    
+    .instagram.centerFlex
+        h1.title.underline Cek instagram kami
+
+    .igShow(loading="lazy" data-mc-src="6b40fcf8-040c-4613-ac85-586cba930cff#instagram")
+
+    script(src="https://cdn2.woxo.tech/a.js#6153e656a7a57a0016738ff7" async data-usrc)
+
+    include includes/footer.pug 
+    script(src='/js/changeNav.js')

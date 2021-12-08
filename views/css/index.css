@@ -1,0 +1,296 @@
+html {
+    overflow-x: hidden;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    color: black;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+#butter {
+    font-family: 'Comfortaa', cursive;
+}
+
+/** header **/
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); */
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#navbars {
+    transition: top 0.4s;
+}
+
+.collapse {
+    background-color: white;
+}
+
+.container-fluid:hover {
+    background-color: white;
+    transition: 0.4s;
+}
+
+.logo {
+    height: 2.3rem;
+    margin-left: 5vw;
+}
+
+#logo-text {
+    color: black;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    padding-left: 4rem;
+}
+
+.navbar-toggler {
+    border: none;
+    margin-right: 4.4vw;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+.navbar-toggler:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(207, 176, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-toggler:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu-text {
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Cinzel', serif;
+}
+
+.navbar-nav {
+    height: 100vh;
+    align-items: center;
+}
+
+.container-nav-items {
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.ic1 {
+    font-size: 1.85rem;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-item {
+    font-size: 1.3rem;
+}
+
+.navlinkFont {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.5px;
+    bottom: 0.5rem;
+    left: 0;
+    background-color: rgb(207, 176, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/** content **/
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.bgtitle {
+    opacity: 65%;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 50% 0%;
+    /* filter:brightness(60%); */
+}
+
+.container-cover {
+    position: absolute;
+    left: 50%;
+    top:35%;
+    transform: translate(-50%, 0%);
+}
+
+.img-cover {
+    position: absolute;
+    left: 50%;
+    top:0%;
+    transform: translate(-50%, 0%);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100vw;
+    height: 100vh;
+}
+
+.maintitle {
+    font-size: 4rem;
+}
+
+.title {
+    font-size: 2.6rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.underline {
+    border-bottom: 1px solid black;
+    padding: 3px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.keunggulan {
+    font-family: 'Cinzel', serif;
+}
+
+.centerFlex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keunggulan .title {
+    padding-top: 4rem;
+}
+
+.manfaat-madu {
+    margin-top: -5rem;
+    margin-bottom: 5rem;
+    background-color: #dd8512;
+    color: white;
+    margin-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.manfaat-madu .container-content {
+    margin-bottom: 1rem;
+}
+
+.content-foto {
+    max-width: 50rem;
+    height: 50vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+.content-text {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 45rem;
+}
+
+.content-text p {
+    text-align:left;
+}
+
+.igShow {
+    max-width: 45rem;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.addTop {
+    padding-top: 4rem;
+}
+
+.addBottom {
+    padding-bottom: 4rem;
+}
+
+.card {
+    border-radius: 5px;
+    transition-duration: 500ms;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    transition-duration: 500ms;
+}
+
+.card-img-top {
+    height: 5rem;
+    width:fit-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.form-control {
+    width: 45rem;
+}

@@ -1,0 +1,49 @@
+.fixbottom {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    background-color: rgb(32, 32, 32);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    color: white;
+    font-weight: 300;
+    line-height: 16pt;
+    width: 100vw;
+}
+
+.link-on-footer {
+    color: white;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding-right: 0.5rem;
+}
+
+.link-on-footer:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+.link-on-footer:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(207, 176, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link-on-footer:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

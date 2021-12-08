@@ -1,0 +1,22 @@
+include includes/header.pug
+
+#butter
+    .container-content.addTop.addBottom
+        h1.title Masukan
+        br
+        
+        span#cek
+        
+        form.g-3.centerFlex(onsubmit="getForm()")
+            .mb-3 
+                label.form-label(for="validationDefault01") Email anda
+                input.form-control#validationDefault01(type="email" placeholder="name@example.com" required)
+            .mb-3
+                label.form-label(for="validationDefault02") Masukan
+                textarea.form-control#validationDefault02(rows="2" required)
+            br
+            button.btn.btn-warning(type="submit") Kirim
+
+    include includes/footer.pug
+    
+    script(src='/js/masukanEngine.js')

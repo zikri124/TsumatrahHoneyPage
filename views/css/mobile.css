@@ -1,0 +1,36 @@
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .content-foto {
+        max-width: 95vw;
+    }
+    .content-text {
+        max-width: 90vw;
+    }
+    h1.h6 {
+        max-width: 90vw;
+    }
+    .addTop {
+        padding-top: 6rem;
+    }
+    .addBottom {
+        padding-top: 6rem;
+    }
+    p {
+        max-width: 90vw;
+    }
+    .form-control {
+        max-width: 90vw;
+    }
+    .navbar {
+        background-color: white;
+    }
+    .igShow {
+        margin-bottom: 4rem;
+    }
+    .underline {
+        border-bottom: none;
+    }
+}
