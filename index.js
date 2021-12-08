@@ -5,7 +5,6 @@ const port = process.env.PORT || 3000
 app.set('views', __dirname+'/views')
 app.set('view engine', 'pug')
 
-app.use('/img', express.static(__dirname + '/public'));
 app.use('/css', express.static(__dirname + '/views/css'));
 app.use('/js', express.static(__dirname + '/views/js'));
 
